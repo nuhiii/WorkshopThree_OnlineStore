@@ -20,7 +20,7 @@ public class DisplayCart {
                 System.out.println(product);
                 total += product.getPrice();
             }
-            System.out.println("Your total is: $" + total);
+            System.out.printf("Your total is: $ %.2f\n", total);
         }
 
         while (true) {
@@ -38,7 +38,6 @@ public class DisplayCart {
                     break;
                 case 2:
                     removeProductFromCart(scanner);
-                    return;
                 case 3:
                     return;
                 default:
