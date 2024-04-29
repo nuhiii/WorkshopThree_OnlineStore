@@ -15,5 +15,7 @@
 - Interesting Snippet: searchProductList function in DisplayProducts class - involves a filtering search through entire inventory with a provided key term from user that will then search through the list of all products and return any product(s) that has any portion of that word in any of its product description(s)
 
 ## Sergio
+- Collab: DisplayCart Class
 
 ## Jennifer
+- Collab: Home Screen
