@@ -24,7 +24,7 @@ public class Main {
             System.out.println("1. Display Products");
             System.out.println("2. Display Cart");
             System.out.println("3. Exit");
-            System.out.print("Enter your choice: ");
+            System.out.print("Please enter your selection: ");
             int choice = scanner.nextInt();
             scanner.nextLine();
 
@@ -35,10 +35,11 @@ public class Main {
                     displayProducts.display(scanner);
                     break;
                 case 2:
-                    //displayCart();
+                    DisplayCart displayCart = new DisplayCart(cart);
+                    displayCart.display(scanner);
                     break;
                 case 3:
-                    System.out.println("Thank you for shopping with us at NSJ!");
+                    System.out.println("Thank you for shopping here with us at NSJ!");
                     System.exit(0);
                 default:
                     System.out.println("Invalid choice! Try again!");
